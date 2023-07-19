@@ -1,6 +1,3 @@
-<!-- Nav Bar End -->
-
-
 <!-- Page Header Start -->
 <div class="page-header mb-0">
     <div class="container">

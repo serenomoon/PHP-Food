@@ -8,7 +8,7 @@ $ruta = Plantilla::ctrRuta();
 
 <head>
     <meta charset="utf-8">
-    <title>Burger King - Food Website Template</title>
+    <title>Burger Queen</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free Website Template" name="keywords">
     <meta content="Free Website Template" name="description">
@@ -41,12 +41,40 @@ $ruta = Plantilla::ctrRuta();
 
         if(isset($_GET["pagina"])){
 
-            if($_GET["pagina"] == "about"){
+            if( $_GET["pagina"] == "inicio"){
+                include "modulos/carrusel.php";
                 include "modulos/".$_GET["pagina"].".php";
             }
 
-            if( $_GET["pagina"] == "inicio"){
-                include "modulos/carrusel.php";
+            if($_GET["pagina"] == "about"){
+                include "modulos/".$_GET["pagina"].".php";
+            }
+            
+            if($_GET["pagina"] == "feature"){
+                include "modulos/".$_GET["pagina"].".php";
+            }
+            
+            if($_GET["pagina"] == "team"){
+                include "modulos/".$_GET["pagina"].".php";
+            }
+
+            if($_GET["pagina"] == "menu"){
+                include "modulos/".$_GET["pagina"].".php";
+            }
+
+            if($_GET["pagina"] == "booking"){
+                include "modulos/".$_GET["pagina"].".php";
+            }
+
+            if($_GET["pagina"] == "blog"){
+                include "modulos/".$_GET["pagina"].".php";
+            }
+
+            if($_GET["pagina"] == "single"){
+                include "modulos/".$_GET["pagina"].".php";
+            }
+
+            if($_GET["pagina"] == "contact"){
                 include "modulos/".$_GET["pagina"].".php";
             }
         }
